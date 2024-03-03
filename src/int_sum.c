@@ -6,7 +6,7 @@
 int* init_array(int n){
     int* array;
     CPUTimer_t malloc_start = CPUTimer();
-    assert(array = (int*)malloc(sizeof(int) * n));
+    assert((array = (int*)malloc(sizeof(int) * n)));
     CPUTimer_t malloc_end = CPUTimer();
     print_timer(malloc_start,malloc_end,"malloc");
 
